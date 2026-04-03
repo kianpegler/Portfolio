@@ -118,4 +118,28 @@ nav a:hover::after {
   margin-bottom: 24px;
 }
 
+.experience-content {
+  padding: 40px 40px 120px;
+  max-width: 900px;
+}
+
+.experience-content h3 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.experience-content p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.experience-list {
+  padding-left: 20px;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+
 
