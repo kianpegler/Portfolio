@@ -1,3 +1,4 @@
+/* GLOBAL */
 body {
   margin: 0;
   background: #ffffff;
@@ -9,11 +10,14 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 24px 40px;
   border-bottom: 1px solid #eee;
 }
 
-.logo {
+.logo a {
+  text-decoration: none;
+  color: #111;
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -28,61 +32,46 @@ nav a {
 
 /* HERO */
 .hero {
-  padding: 120px 40px;
+  padding: 140px 40px;
   max-width: 900px;
 }
 
 .hero h2 {
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 700;
   margin: 0 0 20px;
+  line-height: 1;
 }
 
 .hero p {
   font-size: 22px;
   max-width: 600px;
   line-height: 1.4;
+  margin-bottom: 40px;
 }
 
-/* SECTIONS */
-section {
-  padding: 80px 40px;
-  max-width: 900px;
-}
-
-h3 {
-  font-size: 32px;
-  margin-bottom: 20px;
-}
-
-/* WORK GRID */
-.work-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+/* BUTTONS */
+.cta-buttons {
+  display: flex;
   gap: 20px;
 }
 
-.work-card {
-  padding: 40px;
-  border: 1px solid #eee;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: 600;
-  background: #fafafa;
-}
-
-/* SKILLS */
-.skills ul {
-  list-style: none;
-  padding: 0;
-  columns: 2;
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
   font-size: 18px;
-  line-height: 1.8;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
-/* CONTACT */
-.contact a {
+.btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #f3f3f3;
   color: #111;
-  font-weight: 600;
 }
 
