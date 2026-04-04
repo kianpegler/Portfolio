@@ -1,28 +1,57 @@
+/* ===========================
+   THEME VARIABLES
+   =========================== */
 :root {
   --text: #111111;
   --background: #ffffff;
   --grey: #f3f3f3;
   --accent: #f5c542;
+  --font: "roc-grotesk-variable", sans-serif;
 }
 
-/* GLOBAL */
+/* ===========================
+   GLOBAL
+   =========================== */
 body {
   margin: 0;
   background: var(--background);
   color: var(--text);
-  font-family: "roc-grotesk-variable", sans-serif;
+  font-family: var(--font);
 }
 
-/* NAV */
+h1, h2, h3 {
+  font-family: var(--font);
+  font-weight: 700;
+}
+
+/* ===========================
+   NAVIGATION
+   =========================== */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 40px;
+  border-bottom: 1px solid var(--grey);
+}
+
+.logo a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
 
 nav a {
   margin-left: 24px;
   text-decoration: none;
-  color: #111;
+  color: var(--text);
   font-weight: 500;
   position: relative;
 }
 
+/* Underline on hover + active */
 nav a.active::after,
 nav a:hover::after {
   content: "";
@@ -34,23 +63,9 @@ nav a:hover::after {
   background: var(--accent);
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  border-bottom: 1px solid #eee;
-}
-
-.logo a {
-  text-decoration: none;
-  color: #111;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-/* HERO */
+/* ===========================
+   HERO SECTIONS
+   =========================== */
 .hero {
   padding: 140px 40px;
   max-width: 900px;
@@ -70,28 +85,9 @@ nav a:hover::after {
   margin-bottom: 40px;
 }
 
-/* BUTTONS */
-.cta-buttons {
-  display: flex;
-  gap: 20px;
-}
-
-.btn-primary {
-  background: var(--text);
-  color: var(--background);
-}
-
-.btn-secondary {
-  background: var(--grey);
-  color: var(--text);
-}
-
-.btn-primary:hover {
-  background: var(--accent);
-  color: var(--text);
-}
-
-/* PAGE HERO */
+/* ===========================
+   PAGE HERO (About, Experience, Projects, Contact)
+   =========================== */
 .page-hero {
   padding: 120px 40px 40px;
   max-width: 900px;
@@ -101,6 +97,8 @@ nav a:hover::after {
   font-size: 56px;
   font-weight: 700;
   margin: 0 0 10px;
+  border-left: 6px solid var(--accent);
+  padding-left: 16px;
 }
 
 .page-hero p {
@@ -109,7 +107,9 @@ nav a:hover::after {
   max-width: 600px;
 }
 
-/* ABOUT CONTENT */
+/* ===========================
+   ABOUT PAGE
+   =========================== */
 .about-content {
   padding: 40px 40px 120px;
   max-width: 900px;
@@ -121,6 +121,9 @@ nav a:hover::after {
   margin-bottom: 24px;
 }
 
+/* ===========================
+   EXPERIENCE PAGE
+   =========================== */
 .experience-content {
   padding: 40px 40px 120px;
   max-width: 900px;
@@ -144,7 +147,9 @@ nav a:hover::after {
   line-height: 1.6;
 }
 
-/* PROJECTS PAGE */
+/* ===========================
+   PROJECTS PAGE
+   =========================== */
 .projects-content {
   padding: 40px 40px 120px;
   max-width: 900px;
@@ -165,7 +170,9 @@ nav a:hover::after {
   margin-bottom: 16px;
 }
 
-/* CONTACT PAGE */
+/* ===========================
+   CONTACT PAGE
+   =========================== */
 .contact-content {
   padding: 40px 40px 120px;
   max-width: 900px;
@@ -182,7 +189,7 @@ nav a:hover::after {
 
 .contact-link {
   font-size: 20px;
-  color: #111;
+  color: var(--text);
   text-decoration: underline;
 }
 
@@ -195,62 +202,21 @@ nav a:hover::after {
   margin-bottom: 10px;
 }
 
-/* GLOBAL */
-body {
-  margin: 0;
-  background: #ffffff;
-  color: #111;
-  font-family: "roc-grotesk-variable", sans-serif;
-}
-
-/* NAV */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 40px;
-  border-bottom: 1px solid #eee;
-}
-
-.logo a {
-  text-decoration: none;
-  color: #111;
-  font-size: 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-
-nav a {
-  margin-left: 24px;
-  text-decoration: none;
-  color: #111;
-  font-weight: 500;
-}
-
-/* HERO */
-.hero {
-  padding: 140px 40px;
-  max-width: 900px;
-}
-
-.hero h2 {
-  font-size: 72px;
-  font-weight: 700;
-  margin: 0 0 20px;
-  line-height: 1;
-}
-
-.hero p {
-  font-size: 22px;
-  max-width: 600px;
-  line-height: 1.4;
-  margin-bottom: 40px;
-}
-
-/* BUTTONS */
+/* ===========================
+   BUTTONS
+   =========================== */
 .cta-buttons {
   display: flex;
   gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 .btn-primary {
@@ -266,10 +232,5 @@ nav a {
 .btn-primary:hover {
   background: var(--accent);
   color: var(--text);
-}
-
-.page-hero h2 {
-  border-left: 6px solid var(--accent);
-  padding-left: 16px;
 }
 
