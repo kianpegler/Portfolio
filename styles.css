@@ -226,7 +226,7 @@ nav a:hover::after {
 
 .btn-secondary {
   background: var(--grey);
-  color: var(--background);
+  color: #000000;
 }
 
 .btn-primary:hover {
