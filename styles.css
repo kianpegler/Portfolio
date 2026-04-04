@@ -103,7 +103,7 @@ nav a:hover::after {
 
 .page-hero p {
   font-size: 20px;
-  color: #555;
+  color: var(--accent);
   max-width: 600px;
 }
 
