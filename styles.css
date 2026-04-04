@@ -141,5 +141,24 @@ nav a:hover::after {
   line-height: 1.6;
 }
 
+/* PROJECTS PAGE */
+.projects-content {
+  padding: 40px 40px 120px;
+  max-width: 900px;
+}
 
+.project-block {
+  margin-bottom: 60px;
+}
+
+.project-block h3 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.project-block p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
 
