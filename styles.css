@@ -279,6 +279,10 @@ nav a:hover::after {
   margin-top: 80px;
 }
 
+.footer a {
+   color: black;
+}
+
 .footer-inner {
   display: flex;
   justify-content: space-between;
